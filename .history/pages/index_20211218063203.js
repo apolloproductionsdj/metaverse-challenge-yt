@@ -9,7 +9,7 @@ export default function Home() {
   if (!isAuthenticated) return <Login />;
 
   return (
-    <div className="h-screen overflow-y-scroll bg-gradient-to-b from-black to-fuchsia-900 overflow-hidden">
+    <div className="h-screen overflow-y-scroll bg-gradient-to-b from-black to-fuchsia-900">
       <Head>
         <title>Metaverse Challenge</title>
         <link rel="icon" href="/favicon.ico" />
@@ -18,6 +18,8 @@ export default function Home() {
         <Header />
         {/* Messages */}
       </div>
+
+      <button onClick={logout}>Logout</button>
     </div>
   );
 }
